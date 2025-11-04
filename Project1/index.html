@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ID Card Generator</h1>
+
+    <div class="container">
+        <div class="input-section">
+            <h2>Enter Your Details</h2>
+            <div>
+                <label for="inputName">Full Name:</label>
+                <input type="text" id="inputName" placeholder="e.g., Jane Doe">
+            </div>
+            <div>
+                <label for="inputID">Employee ID:</label>
+                <input type="text" id="inputID" placeholder="e.g., EMP12345">
+            </div>
+            <div>
+                <label for="inputRole">Role / Position:</label>
+                <input type="text" id="inputRole" placeholder="e.g., Software Developer">
+            </div>
+            <button id="generateButton">Generate Card</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Your ID Card</h2>
+            
+            <div id="idCard">
+                <div class="header">
+                    <h3>My Company Inc.</h3>
+                </div>
+                <div class="card-body">
+                    <img src="avatar.png" alt="Profile Photo" id="cardPhoto">
+                    <h4 id="cardName">Your Name</h4>
+                    <p id="cardID">ID: #000000</p>
+                    <p id="cardRole">Your Role</p>
+                </div>
+                <div class="footer">
+                    <p>www.mycompany.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
